@@ -235,4 +235,29 @@ This document maps 14 battle-tested architectural patterns from the most sophist
 | **Staleness System** | Strategy Genomes get age warnings forcing re-validation through Research Domain |
 | **Background Extraction Agent** | Post-trade forked agent catches lessons the main system missed |
 
-Full implementation details, code examples, and rationale for each pattern are in [`docs/claude-code-transferable-architecture.md`](docs/claude-code-transferable-architecture.md).
+### 7.5 AI-Systematic Strategy Pipeline (Research → Backtest → Iterate → Implement)
+
+All Claude Code patterns are integrated within ORACLE's original 4-layer framework:
+
+| Layer | Purpose | Claude Patterns Applied |
+|-------|---------|------------------------|
+| **1. Research** | Gather market data, sentiment, liquidity | Sub-Agent isolation, Context Compression, Fork Agents for parallel data |
+| **2. Backtest** | Test strategies against historical data | ULTRAPLAN (30-min cloud planning), Fork Agents for Monte Carlo, Self-Describing Tools |
+| **3. Iterate** | Learn from results, prune failures | KAIROS (always-on logging), Staleness warnings, /dream consolidation, Background Extraction |
+| **4. Implement** | Execute in live markets | Async Generator Loop, Stop Hooks, Snapshot Security, 7 Permission Modes |
+
+**Strategy Filtering Pipeline**: Strategies pass through 8 filter stages across Layers 2-4 (Initial Generation → Monte Carlo → Walk-Forward → Regime Testing → Staleness Check → Memory Cross-Reference → Paper Trade → Full Deployment). Approximately 2-3% of generated strategies survive to live deployment.
+
+**Automated Implementation**: Surviving strategies are auto-generated as MT5 EAs or Pine Scripts, deployed in Semi-Auto mode, promoted to Full Auto after 10 matching trades, and auto-demoted if performance deviates by >2σ from backtest expectations.
+
+### 7.6 Hidden Features from Claude Code Leak
+
+| Feature | ORACLE Application |
+|---------|--------------------|
+| **ULTRAPLAN** | Cloud-based Opus session generates strategy genomes with 30-minute budget and browser approval |
+| **KAIROS** | Always-on market monitoring with append-only daily logs and proactive pattern detection |
+| **Coordinator Mode** | 370-line system prompt orchestrating all 12 domains with "never delegate understanding" rule |
+| **Claude Mythos / Capybara** | Next-gen model tier for maximum reasoning capability when available |
+| **DAEMON Mode** | Background process for continuous market monitoring outside trading hours |
+
+Full implementation details, code examples, the complete AI-systematic pipeline, and rationale for each pattern are in [`docs/claude-code-transferable-architecture.md`](docs/claude-code-transferable-architecture.md).

@@ -14,8 +14,9 @@
 4. [Operating Modes](#operating-modes)
 5. [End-to-End Workflow](#end-to-end-workflow)
 6. [Integration with ØMEGA AI](#integration-with-ømega-ai)
-7. [TLDR: Implementation Roadmap](#tldr-implementation-roadmap)
-8. [Deep Dive Documents](#deep-dive-documents)
+7. [AI-Systematic Strategy Pipeline](#ai-systematic-strategy-pipeline)
+8. [TLDR: Implementation Roadmap](#tldr-implementation-roadmap)
+9. [Deep Dive Documents](#deep-dive-documents)
 
 ---
 
@@ -142,6 +143,38 @@ While ORACLE AI is a standalone organism, it connects to the broader ØMEGA AI o
 
 ---
 
+## AI-Systematic Strategy Pipeline
+
+ORACLE uses Claude Code's proven architectural patterns as the execution engine for its original 4-layer framework. The AI does not just signal — it researches, backtests, filters, and implements strategies automatically.
+
+### How It Works
+
+| Layer | What the AI Does | Claude Code Pattern |
+|-------|------------------|--------------------|
+| **1. Research** | Gathers market data across all domains in parallel using isolated sub-agents. Each domain (Truth, Signal, Session) runs in `bubble` permission mode — it can read but never execute. | Sub-Agent Pattern, Fork Agents, Context Compression |
+| **2. Backtest** | Generates strategy genomes via ULTRAPLAN (30-min cloud Opus session), then runs 50 parallel Monte Carlo simulations using fork agents that share a single prompt cache (90% cost reduction). | ULTRAPLAN, Fork Agents, Self-Describing Tools |
+| **3. Iterate** | KAIROS mode logs every trade outcome. Background extraction agents mine lessons nightly. Staleness system flags strategies older than 14 days for re-validation. `/dream` consolidation prunes memory. | KAIROS, Staleness, Background Extraction, /dream |
+| **4. Implement** | Async generator loop powers the 14-step Live Market Flow. Stop hooks verify every trade before broker submission. Snapshot security freezes risk params at session start. | Async Generator, Stop Hooks, Snapshot Security |
+
+### Strategy Filtering (8 Stages)
+
+| Stage | Layer | Criteria | Survival |
+|-------|-------|----------|----------|
+| Initial Generation | 2 | ULTRAPLAN generates genome | 100% |
+| Monte Carlo Backtest | 2 | Sharpe > 1.5, Max DD < 15%, Win Rate > 55% | ~20% |
+| Walk-Forward Validation | 2 | Out-of-sample within 80% of in-sample | ~10% |
+| Regime Testing | 2 | Profitable in 3+ of 5 volatility regimes | ~5% |
+| Staleness Check | 3 | Backtested within last 14 days | Removes stale |
+| Memory Cross-Reference | 3 | No contradicting lessons in Trader Profile | Removes conflicting |
+| Live Paper Trade | 3-4 | 2-week paper trade in Signal-Only mode | ~2-3% |
+| Full Deployment | 4 | Approved for live execution | Final survivors |
+
+### Automated Deployment
+
+Surviving strategies are auto-generated as MT5 EAs or Pine Scripts, deployed in Semi-Auto mode, promoted to Full Auto after 10 matching trades, and auto-demoted if performance deviates by >2σ from backtest expectations.
+
+---
+
 ## TLDR: Implementation Roadmap
 
 For CodeSpring or any development orchestrator, follow these phases:
@@ -161,7 +194,7 @@ This repository contains detailed research, architecture, and specification docu
 
 ### 🌟 The Master Blueprint
 * [**CODESPRING-MASTER-INSTRUCTIONS.md**](./CODESPRING-MASTER-INSTRUCTIONS.md) — The definitive 12-domain implementation blueprint with tech stack, instructions, and transferable architecture patterns.
-* [**claude-code-transferable-architecture.md**](./docs/claude-code-transferable-architecture.md) — **NEW**: 14 battle-tested patterns from Claude Code's production agent system, mapped directly to ORACLE's trading domains with code examples and priority matrix.
+* [**claude-code-transferable-architecture.md**](./docs/claude-code-transferable-architecture.md) — **CORE**: Claude Code's 14 battle-tested patterns mapped into the 4-layer Research → Backtest → Iterate → Implement framework, with the AI-systematic strategy pipeline, 8-stage filtering, and automated deployment logic.
 * [**oracle-full-master-writeup.md**](./docs/oracle-full-master-writeup.md) — The original 1,000+ line system design narrative containing the pure logic and philosophy of the system.
 * [**CODESPRING-INTEGRATION-MANIFEST.md**](./CODESPRING-INTEGRATION-MANIFEST.md) — Phase 1 integration targets.
 

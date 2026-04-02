@@ -193,3 +193,46 @@ This section outlines the exact steps to build the ORACLE AI organism. CodeSprin
 ### Phase 6: Memory & Evolution
 1. **Trade Journal**: Implement the PostgreSQL schema to log every setup, decision, MAE, MFE, and outcome.
 2. **Drift Detection**: Build the cron job that analyzes the Trade Journal to demote or retire failing strategies automatically.
+
+---
+
+## 7. Transferable Architecture from Claude Code Source
+
+> **CRITICAL**: Before building any domain, CodeSpring MUST read [`docs/claude-code-transferable-architecture.md`](docs/claude-code-transferable-architecture.md).
+
+This document maps 14 battle-tested architectural patterns from the most sophisticated production AI agent (Claude Code, reverse-engineered at [claude-code-from-source.com](https://claude-code-from-source.com/)) directly to ORACLE's trading domains. These are not theoretical — they are proven patterns running at scale.
+
+### 7.1 Priority 0 (Must Implement First — Prevents Catastrophic Failures)
+
+| Pattern | ORACLE Application |
+|---------|--------------------|
+| **Permission Mode System** | ORACLE's 7 operating modes (Research, Advisory, Semi-Auto, Full Auto, Prop Firm, Recovery, Signal-Only) become named permission modes that control execution capability |
+| **Snapshot Security** | Risk parameters (drawdown limits, position sizing, prop firm thresholds) frozen at session start — no runtime self-modification |
+| **Hook System (PreTradeSubmit)** | Risk Governance implemented as lifecycle hooks with exit-code-2 blocking, not a monolithic function |
+
+### 7.2 Priority 1 (Core Functionality)
+
+| Pattern | ORACLE Application |
+|---------|--------------------|
+| **Async Generator Loop** | The 14-step Live Market Flow as an async generator yielding DomainSignal objects with 8 typed terminal states |
+| **Stop Hook (Trade Verification)** | Verification loop before execution — re-checks Truth Domain, risk limits, spread, prop firm compliance |
+| **Sub-Agent Pattern** | Each domain as a sub-agent with its own context, tools, and permission scope |
+| **Memory System (4-Type Taxonomy)** | Trade memories classified as Trader Profile, Trade Corrections, Active Campaigns, Market Bookmarks |
+
+### 7.3 Priority 2 (Performance Optimization)
+
+| Pattern | ORACLE Application |
+|---------|--------------------|
+| **Fork Agent (Parallel Analysis)** | Session, Range, State, and Liquidity domains run in parallel sharing 99%+ prompt prefix — 4x cost reduction |
+| **4-Layer Context Compression** | Tick budget → Signal snip → Session compact → History collapse prevents context overflow |
+| **Two-Tier State** | Infrastructure state (positions, P&L) separated from reactive UI state (signals, overlays) |
+| **Bootstrap Pipeline** | Market-open readiness in ~1.25 seconds across 5 phases |
+
+### 7.4 Priority 3 (Long-Term Learning)
+
+| Pattern | ORACLE Application |
+|---------|--------------------|
+| **Staleness System** | Strategy Genomes get age warnings forcing re-validation through Research Domain |
+| **Background Extraction Agent** | Post-trade forked agent catches lessons the main system missed |
+
+Full implementation details, code examples, and rationale for each pattern are in [`docs/claude-code-transferable-architecture.md`](docs/claude-code-transferable-architecture.md).

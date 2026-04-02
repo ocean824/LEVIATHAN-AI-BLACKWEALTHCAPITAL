@@ -160,7 +160,8 @@ For CodeSpring or any development orchestrator, follow these phases:
 This repository contains detailed research, architecture, and specification documents. Use the links below to navigate directly to specific areas of the ORACLE AI platform.
 
 ### 🌟 The Master Blueprint
-* [**CODESPRING-MASTER-INSTRUCTIONS.md**](./CODESPRING-MASTER-INSTRUCTIONS.md) — The definitive 12-domain implementation blueprint with tech stack and instructions.
+* [**CODESPRING-MASTER-INSTRUCTIONS.md**](./CODESPRING-MASTER-INSTRUCTIONS.md) — The definitive 12-domain implementation blueprint with tech stack, instructions, and transferable architecture patterns.
+* [**claude-code-transferable-architecture.md**](./docs/claude-code-transferable-architecture.md) — **NEW**: 14 battle-tested patterns from Claude Code's production agent system, mapped directly to ORACLE's trading domains with code examples and priority matrix.
 * [**oracle-full-master-writeup.md**](./docs/oracle-full-master-writeup.md) — The original 1,000+ line system design narrative containing the pure logic and philosophy of the system.
 * [**CODESPRING-INTEGRATION-MANIFEST.md**](./CODESPRING-INTEGRATION-MANIFEST.md) — Phase 1 integration targets.
 

@@ -213,3 +213,20 @@ This repository contains detailed research, architecture, and specification docu
 ---
 
 **ORACLE AI — Built for Black Wealth Capital.**
+
+---
+## Additive Pre-CodeSpring Implementation Appendices
+These documents were added as **non-destructive handoff extensions** to make the ORACLE repository more executable for implementation without removing any original architecture material.
+
+| Document | Purpose |
+|---|---|
+| [additive-implementation-priorities.md](./docs/additive-implementation-priorities.md) | Defines the first real working layer of ORACLE and includes code examples for the first paper-trading path. |
+| [omega-prime-integration-alignment.md](./docs/omega-prime-integration-alignment.md) | Aligns ORACLE’s platform integration language with ØMEGA AI and PRIME as the canonical top-level controller. |
+| [oracle-schema-contracts-and-example-payloads.md](./docs/oracle-schema-contracts-and-example-payloads.md) | Establishes the core layer-1 trading schemas and example JSON payloads for setup, truth, decision, risk, execution, and journaling. |
+| [market-state-transition-matrix.md](./docs/market-state-transition-matrix.md) | Makes the state/regime model explicit with transition rules, policy semantics, and code examples. |
+| [risk-veto-policy-matrix.md](./docs/risk-veto-policy-matrix.md) | Defines when the sovereign risk engine can reduce, block, or halt trades and includes example veto logic. |
+| [paper-trade-replay-example.md](./docs/paper-trade-replay-example.md) | Shows one full paper-trade replay from signal ingress through journal output. |
+| [implementation-module-map.md](./docs/implementation-module-map.md) | Maps the documentation into a concrete proposed codebase structure and build order for CodeSpring. |
+
+### TLDR: What These Additions Do
+These appendices make ORACLE AI more **implementation-ready** rather than merely more verbose. They give CodeSpring a stricter schema layer, clearer state logic, explicit risk-veto behavior, a replayable first execution path, and a cleaner module map for building the system.

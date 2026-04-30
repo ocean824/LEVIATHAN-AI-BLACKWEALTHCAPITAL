@@ -1,4 +1,4 @@
-# ORACLE AI Market-State Transition Matrix
+# LEVIATHAN AI Market-State Transition Matrix
 
 **Status:** Additive pre-handoff implementation appendix  
 **Purpose:** Make ORACLE’s market-regime logic explicit enough to drive replay, filtering, and deployment decisions
@@ -129,6 +129,6 @@ ORACLE should not reason about “the market” as one thing. It should reason a
 
 ## References
 
-[1]: ../README.md "ORACLE AI README"
+[1]: ../README.md "LEVIATHAN AI README"
 [2]: ./claude-code-transferable-architecture.md "ORACLE Claude Code Transferable Architecture"
-[3]: ./additive-implementation-priorities.md "ORACLE AI Additive Implementation Priorities"
+[3]: ./additive-implementation-priorities.md "LEVIATHAN AI Additive Implementation Priorities"

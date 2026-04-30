@@ -1,7 +1,7 @@
-# ORACLE AI: Advanced Order Flow & Intelligence Trading System
+# LEVIATHAN AI: Advanced Order Flow & Intelligence Trading System
 
 > **Organization:** Black Wealth Capital
-> **Project:** ORACLE AI — Standalone Trading Software & Intelligence Core
+> **Project:** LEVIATHAN AI — Standalone Trading Software & Intelligence Core
 > **Status:** Strategic Blueprint / Full System Architecture
 > **Last Updated:** April 2026
 
@@ -22,14 +22,14 @@
 
 ## Vision & Core Philosophy
 
-ORACLE AI is the trading mind of Black Wealth Capital. It is designed as a standalone, institutionally structured, research-first trading organism. 
+LEVIATHAN AI is the trading mind of Black Wealth Capital. It is designed as a standalone, institutionally structured, research-first trading organism. 
 
 Its identity is not built around "prediction" — its identity is built around **capital permission**. It exists to absorb trading knowledge, transform that knowledge into structured strategy intelligence, read live markets across multiple truth layers, and decide whether capital deserves deployment.
 
 ### The 6 Core Principles
 1. **Research comes before deployment**: No setup becomes live logic merely because it looks good. It must be structured, tested, and validated.
 2. **Market state comes before chart pattern**: A pattern's value depends on session, prior range, volatility, and liquidity context.
-3. **Order book truth outranks chart cosmetics**: If level-two flow and liquidity behavior contradict the chart, ORACLE must downgrade or reject the idea.
+3. **Order book truth outranks chart cosmetics**: If level-two flow and liquidity behavior contradict the chart, LEVIATHAN must downgrade or reject the idea.
 4. **Risk is sovereign**: Risk governance is its own authority. Nothing else may override it.
 5. **Execution is part of the edge**: Trade management (entry, slippage, scaling, exits) is part of the strategy, not a separate convenience.
 6. **Knowledge must be ingested, but never worshipped**: Documents and books are inputs. They must be parsed, validated, and tested through research before influencing real capital.
@@ -38,7 +38,7 @@ Its identity is not built around "prediction" — its identity is built around *
 
 ## The 12+ Domain Architecture
 
-ORACLE AI is not a simple signal bot. It is an organism built from tightly connected domains that handle everything from document parsing to direct broker execution.
+LEVIATHAN AI is not a simple signal bot. It is an organism built from tightly connected domains that handle everything from document parsing to direct broker execution.
 
 ### 1. The Knowledge Domain
 Ingests documents (PDFs, text, manuals) and converts them into structured strategy intelligence. It preserves source identity, chunks content by concept, and extracts logic into structured components. **Critical Rule**: Document knowledge must never go directly to live execution without passing through the Research Domain.
@@ -68,7 +68,7 @@ Validates or rejects chart-side ideas using live market behavior across 4 sub-la
 Renders advanced market intelligence over TradingView-style charts. Shows liquidity heatmap bands, market profiles, volume concentration, and order-book density zones in a clean, low-opacity interface.
 
 ### 8. The TradingView Bot Layer
-The chart-to-intelligence bridge. Receives TradingView webhooks, maps them to ORACLE strategy families, enriches with session/state context, passes to Truth Domain for verification, and renders response back to user workflow.
+The chart-to-intelligence bridge. Receives TradingView webhooks, maps them to LEVIATHAN strategy families, enriches with session/state context, passes to Truth Domain for verification, and renders response back to user workflow.
 
 ### 9. The Execution & Broker Plug-In Layer
 Supports two major execution spines:
@@ -83,11 +83,21 @@ Supports two major execution spines:
 - **Position Management**: Governs probe entries, partial profit taking, break-even transitions, runner preservation, and trailing escalation.
 - **Memory Domain**: Records every candidate setup, session label, state label, decision explanation, entry, exit, MAE, MFE, and outcome. Drives self-improvement via drift detection and strategy promotion/retirement.
 
+### 12. Named Internal Sub-Agents
+LEVIATHAN AI can retain the same architectural information while adopting clearer internal naming. The first two named sub-agents in the current naming pass are **ORCA AI** and **MEGALODON AI**.
+
+| Sub-Agent | Primary Role | Responsibility Within LEVIATHAN AI |
+|---|---|---|
+| **ORCA AI** | Market sensing and validation core | Owns signal interpretation, market-state enrichment, liquidity reading, and truth-layer synthesis before capital is approved. |
+| **MEGALODON AI** | Execution and apex deployment core | Owns execution orchestration, position management, and high-conviction deployment enforcement after Decision and Risk governance have aligned. |
+
+These names are intentionally additive and do not change the underlying architecture. They provide the first internal naming anchors while the remaining sub-agent naming set is still being finalized.
+
 ---
 
 ## Global Tech Stack
 
-ORACLE AI relies on a modern, high-performance tech stack to execute its architecture:
+LEVIATHAN AI relies on a modern, high-performance tech stack to execute its architecture:
 
 | Category | Technology |
 |----------|------------|
@@ -103,7 +113,7 @@ ORACLE AI relies on a modern, high-performance tech stack to execute its archite
 
 ## Operating Modes
 
-ORACLE AI adapts to different environments and risk tolerances:
+LEVIATHAN AI adapts to different environments and risk tolerances:
 - **Research Mode**: Testing and generation only. No live execution.
 - **Advisory Mode**: Signals and plans only.
 - **Semi-Automatic Mode**: Execution allowed only after full truth and risk checks (manual trigger).
@@ -136,16 +146,16 @@ ORACLE AI adapts to different environments and risk tolerances:
 
 ## Integration with ØMEGA AI
 
-While ORACLE AI is a standalone organism, it connects to the broader ØMEGA AI orchestrator as a specialized peer (the `QUANTUM` Agent). It communicates via a **dedicated status protocol**:
+While LEVIATHAN AI is a standalone organism, it connects to the broader ØMEGA AI orchestrator as a specialized peer through the `QUANTUM` agent. Internally, LEVIATHAN’s first two explicitly named trading sub-agents are **ORCA AI** and **MEGALODON AI**. It communicates via a **dedicated status protocol**:
 - **Status Heartbeat**: Broadcasts current bias, market regime, and confidence.
-- **Inquiry/Response**: ØMEGA sends a signal; ORACLE returns a validated Confidence Score.
+- **Inquiry/Response**: ØMEGA sends a signal; LEVIATHAN returns a validated Confidence Score.
 - **Kill Switch Sync**: A global halt in either system triggers a halt in the other.
 
 ---
 
 ## AI-Systematic Strategy Pipeline
 
-ORACLE uses Claude Code's proven architectural patterns as the execution engine for its original 4-layer framework. The AI does not just signal — it researches, backtests, filters, and implements strategies automatically.
+LEVIATHAN AI uses Claude Code's proven architectural patterns as the execution engine for its original 4-layer framework. The system does not just signal — it researches, backtests, filters, and implements strategies automatically.
 
 ### How It Works
 
@@ -190,7 +200,7 @@ For CodeSpring or any development orchestrator, follow these phases:
 
 ## Deep Dive Documents
 
-This repository contains detailed research, architecture, and specification documents. Use the links below to navigate directly to specific areas of the ORACLE AI platform.
+This repository contains detailed research, architecture, and specification documents. Use the links below to navigate directly to specific areas of the LEVIATHAN AI platform.
 
 ### 🌟 The Master Blueprint
 * [**CODESPRING-MASTER-INSTRUCTIONS.md**](./CODESPRING-MASTER-INSTRUCTIONS.md) — The definitive 12-domain implementation blueprint with tech stack, instructions, and transferable architecture patterns.
@@ -212,16 +222,16 @@ This repository contains detailed research, architecture, and specification docu
 
 ---
 
-**ORACLE AI — Built for Black Wealth Capital.**
+**LEVIATHAN AI — Built for Black Wealth Capital.**
 
 ---
 ## Additive Pre-CodeSpring Implementation Appendices
-These documents were added as **non-destructive handoff extensions** to make the ORACLE repository more executable for implementation without removing any original architecture material.
+These documents were added as **non-destructive handoff extensions** to make the LEVIATHAN repository more executable for implementation without removing any original architecture material.
 
 | Document | Purpose |
 |---|---|
-| [additive-implementation-priorities.md](./docs/additive-implementation-priorities.md) | Defines the first real working layer of ORACLE and includes code examples for the first paper-trading path. |
-| [omega-prime-integration-alignment.md](./docs/omega-prime-integration-alignment.md) | Aligns ORACLE’s platform integration language with ØMEGA AI and PRIME as the canonical top-level controller. |
+| [additive-implementation-priorities.md](./docs/additive-implementation-priorities.md) | Defines the first real working layer of LEVIATHAN and includes code examples for the first paper-trading path. |
+| [omega-prime-integration-alignment.md](./docs/omega-prime-integration-alignment.md) | Aligns LEVIATHAN’s platform integration language with ØMEGA AI and PRIME as the canonical top-level controller. |
 | [oracle-schema-contracts-and-example-payloads.md](./docs/oracle-schema-contracts-and-example-payloads.md) | Establishes the core layer-1 trading schemas and example JSON payloads for setup, truth, decision, risk, execution, and journaling. |
 | [market-state-transition-matrix.md](./docs/market-state-transition-matrix.md) | Makes the state/regime model explicit with transition rules, policy semantics, and code examples. |
 | [risk-veto-policy-matrix.md](./docs/risk-veto-policy-matrix.md) | Defines when the sovereign risk engine can reduce, block, or halt trades and includes example veto logic. |
@@ -229,4 +239,4 @@ These documents were added as **non-destructive handoff extensions** to make the
 | [implementation-module-map.md](./docs/implementation-module-map.md) | Maps the documentation into a concrete proposed codebase structure and build order for CodeSpring. |
 
 ### TLDR: What These Additions Do
-These appendices make ORACLE AI more **implementation-ready** rather than merely more verbose. They give CodeSpring a stricter schema layer, clearer state logic, explicit risk-veto behavior, a replayable first execution path, and a cleaner module map for building the system.
+These appendices make LEVIATHAN AI more **implementation-ready** rather than merely more verbose. They give CodeSpring a stricter schema layer, clearer state logic, explicit risk-veto behavior, a replayable first execution path, and a cleaner module map for building the system.

@@ -1,7 +1,7 @@
-# 🔮 CODESPRING MASTER INSTRUCTIONS: ORACLE AI (BLACK WEALTH CAPITAL)
+# 🔮 CODESPRING MASTER INSTRUCTIONS: LEVIATHAN AI (BLACK WEALTH CAPITAL)
 
 > **Role**: Lead Quantitative Developer & Systems Architect
-> **Objective**: Implement the ORACLE AI Standalone Trading System & ØMEGA AI Intelligence Core.
+> **Objective**: Implement the LEVIATHAN AI Standalone Trading System & ØMEGA AI Intelligence Core.
 > **Status**: Hyper-Detailed Implementation Blueprint (Institutional-Grade)
 > **Last Updated**: April 2026
 
@@ -9,7 +9,7 @@
 
 ## 1. Prime Directive & Core Identity
 
-ORACLE AI must be designed as a standalone, institutionally structured, research-first trading organism for Black Wealth Capital. It is **not** a simple signal bot, a chart indicator pack, a broker add-on, or a generic AI assistant. 
+LEVIATHAN AI must be designed as a standalone, institutionally structured, research-first trading organism for Black Wealth Capital. It is **not** a simple signal bot, a chart indicator pack, a broker add-on, or a generic AI assistant. 
 
 Its core identity is built around **capital permission**, not just prediction. It exists to answer:
 - What kind of environment is the market in right now?
@@ -18,13 +18,13 @@ Its core identity is built around **capital permission**, not just prediction. I
 - Is order-book behavior supporting or rejecting what the chart suggests?
 - Is this setup safe under prop firm rules?
 
-ORACLE AI functions simultaneously as a research laboratory, strategy compiler, chart-intelligence layer, market-state interpreter, level-two truth engine, risk governance engine, and visual overlay engine.
+LEVIATHAN AI functions simultaneously as a research laboratory, strategy compiler, chart-intelligence layer, market-state interpreter, level-two truth engine, risk governance engine, and visual overlay engine.
 
 ---
 
 ## 2. Core Philosophy
 
-ORACLE AI operates on six non-negotiable principles:
+LEVIATHAN AI operates on six non-negotiable principles:
 1. **Research comes before deployment**: No setup becomes live logic merely because it looks good. It must be structured, tested, and validated.
 2. **Market state comes before chart pattern**: A pattern's value depends on session, prior range, volatility, and liquidity context.
 3. **Order book truth outranks chart cosmetics**: If level-two flow and liquidity behavior contradict the chart, ORACLE must downgrade or reject the idea.
@@ -36,7 +36,7 @@ ORACLE AI operates on six non-negotiable principles:
 
 ## 3. Full System Architecture: The 12+ Domains
 
-ORACLE AI is built as a tightly connected organism comprising the following specialized domains.
+LEVIATHAN AI is built as a tightly connected organism comprising the following specialized domains.
 
 ### 3.1 The Knowledge Domain
 Ingests documents (PDFs, text, manuals) and converts them into structured strategy intelligence.
@@ -163,7 +163,7 @@ The final build must integrate these technologies to support all 12+ domains.
 
 ## 6. Implementation Instructions for CodeSpring
 
-This section outlines the exact steps to build the ORACLE AI organism. CodeSpring must follow these phases strictly.
+This section outlines the exact steps to build the LEVIATHAN AI organism. CodeSpring must follow these phases strictly.
 
 ### Phase 1: Core Infrastructure & Knowledge Domain
 1. **Setup Environment**: Initialize Python 3.11, FastAPI, PostgreSQL, Redis, and Pinecone.

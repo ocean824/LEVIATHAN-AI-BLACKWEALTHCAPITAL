@@ -1,4 +1,4 @@
-# ORACLE AI Risk-Veto Policy Matrix
+# LEVIATHAN AI Risk-Veto Policy Matrix
 
 **Status:** Additive pre-handoff implementation appendix  
 **Purpose:** Define when the Sovereign Risk Engine may reduce, block, or halt decisions produced by the trading logic
@@ -140,6 +140,6 @@ ORACLE becomes much safer to build when the risk layer is not just a concept but
 
 ## References
 
-[1]: ../README.md "ORACLE AI README"
+[1]: ../README.md "LEVIATHAN AI README"
 [2]: ./claude-code-transferable-architecture.md "ORACLE Claude Code Transferable Architecture"
-[3]: ./additive-implementation-priorities.md "ORACLE AI Additive Implementation Priorities"
+[3]: ./additive-implementation-priorities.md "LEVIATHAN AI Additive Implementation Priorities"

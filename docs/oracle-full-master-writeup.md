@@ -1,10 +1,10 @@
-Ø — here is the rebuilt full master write-up for ORACLE AI with the new visual overlay layer, broker plug-in flow, MetaTrader Five expert advisor layer, TradingView bot layer, prop firm mode, document-ingestion intelligence, and everything else we agreed on.
+Ø — here is the rebuilt full master write-up for LEVIATHAN AI with the new visual overlay layer, broker plug-in flow, MetaTrader Five expert advisor layer, TradingView bot layer, prop firm mode, document-ingestion intelligence, and everything else we agreed on.
 
 I am writing this as a true system design narrative, not a loose summary.
 
 ⸻
 
-ORACLE AI
+LEVIATHAN AI
 
 BlackWealthCapital Black Box System
 
@@ -12,7 +12,7 @@ Full Master System Architecture and Operating Logic
 
 Prime Directive
 
-ORACLE AI must be designed as a standalone, institutionally structured, research-first trading organism for BlackWealthCapital.
+LEVIATHAN AI must be designed as a standalone, institutionally structured, research-first trading organism for BlackWealthCapital.
 
 It must not be built as a simple signal bot, a chart indicator pack, a broker add-on, or a generic artificial intelligence assistant that happens to know something about markets. It must be its own specialist system whose sole purpose is to:
 	•	absorb trading knowledge,
@@ -25,7 +25,7 @@ It must not be built as a simple signal bot, a chart indicator pack, a broker ad
 	•	render advanced market structure and order flow visually on top of TradingView charts,
 	•	and improve continuously through journaling, attribution, and model evolution.
 
-ORACLE AI must be able to function as:
+LEVIATHAN AI must be able to function as:
 	•	a research laboratory,
 	•	a strategy compiler,
 	•	a chart-intelligence layer,
@@ -46,12 +46,12 @@ Section One
 
 Core Identity
 
-ORACLE AI is the trading mind of BlackWealthCapital.
+LEVIATHAN AI is the trading mind of BlackWealthCapital.
 
 Its identity is not built around “prediction.”
 Its identity is built around capital permission.
 
-That means ORACLE AI exists to answer questions like:
+That means LEVIATHAN AI exists to answer questions like:
 	•	What kind of environment is the market in right now?
 	•	Which strategy family is compatible with this environment?
 	•	Does the current setup deserve risk?
@@ -62,7 +62,7 @@ That means ORACLE AI exists to answer questions like:
 	•	Is order-book behavior supporting or rejecting what the chart suggests?
 	•	Is the current market context aligned enough to justify execution?
 
-This is the fundamental shift that makes ORACLE AI different from ordinary trading software.
+This is the fundamental shift that makes LEVIATHAN AI different from ordinary trading software.
 
 ⸻
 
@@ -70,7 +70,7 @@ Section Two
 
 Core Philosophy
 
-ORACLE AI must operate on the following principles.
+LEVIATHAN AI must operate on the following principles.
 
 Research comes before deployment
 
@@ -110,7 +110,7 @@ Section Three
 
 Full System Domains
 
-ORACLE AI must be built as eight tightly connected domains.
+LEVIATHAN AI must be built as eight tightly connected domains.
 
 The Knowledge Domain
 
@@ -152,7 +152,7 @@ Section Four
 
 The Knowledge Domain
 
-This is one of the most important upgrades to ORACLE AI.
+This is one of the most important upgrades to LEVIATHAN AI.
 
 ORACLE must be able to ingest documents you provide and convert them into structured knowledge.
 
@@ -1012,7 +1012,7 @@ Section Twenty-Four
 
 Final Identity
 
-ORACLE AI must now be understood as all of the following at once:
+LEVIATHAN AI must now be understood as all of the following at once:
 	•	a knowledge-ingesting strategy intelligence system,
 	•	a quant research laboratory,
 	•	a chart and signal interpretation engine,

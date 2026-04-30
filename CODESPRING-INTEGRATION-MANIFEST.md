@@ -1,11 +1,11 @@
-# CODESPRING INTEGRATION MANIFEST: ORACLE AI
+# CODESPRING INTEGRATION MANIFEST: LEVIATHAN AI
 
-> **To CodeSpring Orchestrator:** This document is the primary entry point for the implementation of the **ORACLE AI** (Black Wealth Capital). It maps the high-level trading research to specific implementation targets for this standalone software.
+> **To CodeSpring Orchestrator:** This document is the primary entry point for the implementation of the **LEVIATHAN AI** (Black Wealth Capital). It maps the high-level trading research to specific implementation targets for this standalone software.
 
 ---
 
 ## 1. Project Identity & Context
-- **Project Name**: ORACLE AI (Black Wealth Capital)
+- **Project Name**: LEVIATHAN AI (Black Wealth Capital)
 - **Architecture**: 4-Layer Confirmation Stack.
 - **Primary Goal**: High-probability trading decision quality through stacked confirmation.
 - **Core Methodology**: Order Flow (Layer 1), Visual AI (Layer 2), Indicator State (Layer 3), Synthesis (Layer 4).
@@ -58,4 +58,4 @@
 
 ---
 
-**ORACLE AI — Built for Black Wealth Capital.**
+**LEVIATHAN AI — Built for Black Wealth Capital.**

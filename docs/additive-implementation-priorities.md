@@ -1,11 +1,11 @@
-# ORACLE AI Additive Implementation Priorities
+# LEVIATHAN AI Additive Implementation Priorities
 
 **Status:** Additive implementation note  
-**Intent:** Preserve the existing ORACLE AI architecture while defining the smallest high-leverage next steps toward execution
+**Intent:** Preserve the existing LEVIATHAN AI architecture while defining the smallest high-leverage next steps toward execution
 
 ## Why This Document Exists
 
-ORACLE AI already has strong conceptual separation across research, signal interpretation, session and range context, state modeling, liquidity, truth validation, decisioning, sovereign risk governance, execution, position management, and memory.[1] [2] What it needs next is not a new philosophy. It needs a narrow set of implementation contracts that can prove the architecture under simulation and then under controlled execution.[1] [2]
+LEVIATHAN AI already has strong conceptual separation across research, signal interpretation, session and range context, state modeling, liquidity, truth validation, decisioning, sovereign risk governance, execution, position management, and memory.[1] [2] What it needs next is not a new philosophy. It needs a narrow set of implementation contracts that can prove the architecture under simulation and then under controlled execution.[1] [2]
 
 This note is intentionally **additive**. It does not replace any architecture file or master instruction set.
 
@@ -328,9 +328,9 @@ The safest next additive artifacts would be code-adjacent schema definitions, ex
 
 ## TL;DR
 
-ORACLE AI does not need a conceptual rewrite. It needs strict schemas, one replayable vertical slice, visible risk-veto logging, and measurable drift detection. If those are added first, the rest of the architecture can scale with much less structural risk.
+LEVIATHAN AI does not need a conceptual rewrite. It needs strict schemas, one replayable vertical slice, visible risk-veto logging, and measurable drift detection. If those are added first, the rest of the architecture can scale with much less structural risk.
 
 ## References
 
-[1]: ../README.md "ORACLE AI README"
+[1]: ../README.md "LEVIATHAN AI README"
 [2]: ./claude-code-transferable-architecture.md "ORACLE Claude Code Transferable Architecture"

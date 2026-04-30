@@ -1,11 +1,11 @@
-# ORACLE AI Schema Contracts and Example Payloads
+# LEVIATHAN AI Schema Contracts and Example Payloads
 
 **Status:** Additive pre-handoff implementation appendix  
-**Purpose:** Convert the ORACLE AI architecture into a stricter set of executable object contracts for CodeSpring implementation
+**Purpose:** Convert the LEVIATHAN AI architecture into a stricter set of executable object contracts for CodeSpring implementation
 
 ## Why This Document Exists
 
-ORACLE AI already defines a sophisticated trading organism across research, signal intake, state interpretation, truth validation, decisioning, risk governance, execution, and memory.[1] [2] The remaining implementation gap is that many of those layers are described conceptually rather than encoded as a canonical set of payload contracts. This document closes that gap by defining the minimum typed objects CodeSpring should treat as the first stable surface of the system.[1] [2] [3]
+LEVIATHAN AI already defines a sophisticated trading organism across research, signal intake, state interpretation, truth validation, decisioning, risk governance, execution, and memory.[1] [2] The remaining implementation gap is that many of those layers are described conceptually rather than encoded as a canonical set of payload contracts. This document closes that gap by defining the minimum typed objects CodeSpring should treat as the first stable surface of the system.[1] [2] [3]
 
 The goal is not to freeze every future evolution. The goal is to provide a **clean first contract layer** so that ingestion, replay, testing, and execution all talk about the same objects.
 
@@ -279,6 +279,6 @@ If CodeSpring receives only one new ORACLE appendix before implementation, it sh
 
 ## References
 
-[1]: ../README.md "ORACLE AI README"
+[1]: ../README.md "LEVIATHAN AI README"
 [2]: ./claude-code-transferable-architecture.md "ORACLE Claude Code Transferable Architecture"
-[3]: ./additive-implementation-priorities.md "ORACLE AI Additive Implementation Priorities"
+[3]: ./additive-implementation-priorities.md "LEVIATHAN AI Additive Implementation Priorities"

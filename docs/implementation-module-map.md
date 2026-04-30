@@ -1,7 +1,7 @@
-# ORACLE AI Implementation Module Map
+# LEVIATHAN AI Implementation Module Map
 
 **Status:** Additive pre-handoff implementation appendix  
-**Purpose:** Translate the ORACLE AI documentation into a concrete codebase layout and service decomposition for CodeSpring
+**Purpose:** Translate the LEVIATHAN AI documentation into a concrete codebase layout and service decomposition for CodeSpring
 
 ## Why This Document Exists
 
@@ -137,6 +137,6 @@ This module map helps CodeSpring build ORACLE as a layered organism rather than 
 
 ## References
 
-[1]: ../README.md "ORACLE AI README"
+[1]: ../README.md "LEVIATHAN AI README"
 [2]: ./claude-code-transferable-architecture.md "ORACLE Claude Code Transferable Architecture"
-[3]: ./paper-trade-replay-example.md "ORACLE AI Paper-Trade Replay Example"
+[3]: ./paper-trade-replay-example.md "LEVIATHAN AI Paper-Trade Replay Example"

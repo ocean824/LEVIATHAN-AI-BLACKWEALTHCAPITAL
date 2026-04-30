@@ -1,4 +1,4 @@
-# ORACLE AI Paper-Trade Replay Example
+# LEVIATHAN AI Paper-Trade Replay Example
 
 **Status:** Additive pre-handoff implementation appendix  
 **Purpose:** Show one full replayable ORACLE cycle so CodeSpring can build the first real working path before any live execution
@@ -235,7 +235,7 @@ Before ORACLE touches live capital, CodeSpring should make this replay path work
 
 ## References
 
-[1]: ../README.md "ORACLE AI README"
+[1]: ../README.md "LEVIATHAN AI README"
 [2]: ./claude-code-transferable-architecture.md "ORACLE Claude Code Transferable Architecture"
-[3]: ./oracle-schema-contracts-and-example-payloads.md "ORACLE AI Schema Contracts and Example Payloads"
-[4]: ./additive-implementation-priorities.md "ORACLE AI Additive Implementation Priorities"
+[3]: ./oracle-schema-contracts-and-example-payloads.md "LEVIATHAN AI Schema Contracts and Example Payloads"
+[4]: ./additive-implementation-priorities.md "LEVIATHAN AI Additive Implementation Priorities"

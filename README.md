@@ -240,3 +240,116 @@ These documents were added as **non-destructive handoff extensions** to make the
 
 ### TLDR: What These Additions Do
 These appendices make LEVIATHAN AI more **implementation-ready** rather than merely more verbose. They give CodeSpring a stricter schema layer, clearer state logic, explicit risk-veto behavior, a replayable first execution path, and a cleaner module map for building the system.
+
+
+---
+
+## Additional Feature Extension: LEVIATHAN Market Intelligence Terminal
+
+LEVIATHAN AI can absorb the full **Bloomberg-style terminal layer** represented by the BB-Terminal project and treat it as an operator-facing extension inside the broader LEVIATHAN architecture. In practical terms, this means LEVIATHAN would not only govern truth, risk, execution, and memory, but would also expose a fast visual **market-intelligence workstation** that allows a trader, analyst, or supervisor to interrogate markets through function codes rather than navigating fragmented dashboards.
+
+This extension is valuable because it transforms several LEVIATHAN domains into an immediately usable interface. The **Signal Domain**, **State Domain**, **Truth Domain**, **Visual Overlay Domain**, and parts of the **Memory / Decision workflow** can be surfaced through a terminal-style command layer that is lightweight, auditable, and fast to operate.
+
+### What This Extension Adds to LEVIATHAN
+
+| Extension Capability | What It Adds Inside LEVIATHAN | Why It Matters |
+|---|---|---|
+| **Command Center terminal home screen** | A single screen for indices, yield curve, FX majors, crypto, movers, and headline context | Gives LEVIATHAN an operator briefing layer rather than only backend orchestration |
+| **INTEL scorecard** | A structured verdict engine that converts raw data into auditable bullish / neutral / bearish rule outcomes | Matches LEVIATHAN’s need for interpretable pre-trade intelligence rather than black-box signals |
+| **Function-code workflow** | Fast command syntax for intelligence retrieval such as `INTEL`, `KEY`, `QR`, `OMON`, and `CURV` | Creates a professional terminal workflow for analysts and traders |
+| **Transparent rules engine** | Signal logic based on explicit thresholds instead of opaque predictions | Aligns with LEVIATHAN’s capital-permission philosophy and sovereign review model |
+| **OpenBB-backed data access** | Broad market and company data coverage through a unified data interface | Provides a practical data spine for early-stage market intelligence features |
+| **React + TypeScript workstation UI** | A deployable front-end layer that can later be re-skinned into LEVIATHAN branding | Reduces time-to-interface for live productization |
+| **Terminal command bar + workspace tabs** | Human-usable multi-panel market workflow | Makes LEVIATHAN usable as a product, not just a concept stack |
+
+### Terminal Function Surface That Can Be Imported into LEVIATHAN
+
+The BB-Terminal project already defines a strong first-layer functional surface that maps well into LEVIATHAN’s operator console. Those functions can be adopted as-is initially, then extended with LEVIATHAN-specific truth, execution, and risk overlays.
+
+| Function Code | Current Capability | LEVIATHAN Mapping |
+|---|---|---|
+| `CC` | Command Center dashboard | Global pre-session market briefing layer |
+| `HELP` | Function directory | Operator assist and command discovery |
+| `<TICKER>` / `INTEL` | Synthesized equity intelligence scorecard | Signal + truth pre-decision summary |
+| `DES` | Company description / profile | Research / issuer context |
+| `GP` | Multi-period candlestick chart | Chart-side structure and visual review |
+| `QR` | Live quote panel | Quote monitoring and trigger awareness |
+| `HP` | Historical prices | Contextual price analysis and replay |
+| `FA` | Five-year financial statements | Research and valuation context |
+| `KEY` | Ratios and key metrics | Valuation / quality / screening layer |
+| `DVD` | Dividend history | Income and capital-return context |
+| `EE` | Analyst targets and recommendation data | External expectation benchmarking |
+| `NI` | Company news | Narrative / event context |
+| `OMON` | Options chain monitor | Derivatives context for the Truth Domain |
+| `WEI` | World equity indices | Cross-market regime awareness |
+| `MOV` | Gainers / losers / active names | Opportunity discovery and anomaly scanning |
+| `CRYPTO` | Crypto dashboard | Multi-asset surveillance extension |
+| `FXC` | Major FX pairs | Macro and cross-asset context |
+| `CURV` | Treasury yield curve and spreads | Macro regime, liquidity, and recession-signal context |
+
+### How This Fits the Existing LEVIATHAN Architecture
+
+This extension should be treated as a **LEVIATHAN-facing market interface module**, not as a replacement for the sovereign architecture already defined in this repository. Its best fit is as a product-facing layer that sits on top of LEVIATHAN’s institutional logic.
+
+| Existing LEVIATHAN Domain | BB-Terminal Contribution | Resulting Combined Feature |
+|---|---|---|
+| **Signal Domain** | INTEL, GP, HP, KEY | Faster chart + metric interpretation for live candidates |
+| **Truth Domain** | OMON, NI, CURV, FXC, WEI | Better contextual confirmation before permissioning capital |
+| **Research Domain** | DES, FA, KEY, HP | Faster research pull-through into the strategy workflow |
+| **Visual Overlay Domain** | Terminal layout, command center, workspace tabs | A usable trader-facing interface shell |
+| **Decision Domain** | Rule-based summaries from `signals.ts` | Transparent pre-decision evidence display |
+| **Memory / Replay** | Historical panels and rule outputs | Easier journaling, review, and post-trade audit surfaces |
+
+### Technical Extension Profile
+
+The BB-Terminal stack is a strong fit for an early LEVIATHAN interface layer because it is already broken into a clean API + UI pattern.
+
+| Layer | Imported Stack | LEVIATHAN Extension Role |
+|---|---|---|
+| **Market API** | OpenBB Platform on FastAPI / Uvicorn | Early-stage market-data abstraction layer |
+| **UI Framework** | Vite + React + TypeScript | Terminal workstation shell |
+| **Charts** | TradingView Lightweight Charts | Visual market review and operator workflow |
+| **Rule Engine** | `app/src/lib/signals.ts` | First interpretable evidence engine before LEVIATHAN-specific truth models |
+| **Command System** | CommandBar + WorkspaceTabs + FunctionPanel | Human interface to LEVIATHAN intelligence |
+
+### Productization Interpretation Inside LEVIATHAN
+
+If incorporated correctly, this should be presented as a new LEVIATHAN feature rather than a separate unrelated repo. The clean framing is that LEVIATHAN gains a **Market Intelligence Terminal** extension that gives users a professional operator environment for discretionary review, semi-automated supervision, and eventually governed live deployment.
+
+This means the imported terminal should initially serve three roles. First, it becomes the **research and market-briefing console** for analysts. Second, it becomes the **pre-trade verification console** for ORCA AI as it interprets state, liquidity, and external context. Third, it becomes the **execution supervision console** that MEGALODON AI can use as a visible operator layer once order-routing and broker interfaces are wired in.
+
+### Practical Implementation Positioning
+
+The BB-Terminal codebase is especially useful because it already proves a first working surface for:
+
+| Already Implemented in the Source Project | Immediate Value to LEVIATHAN |
+|---|---|
+| Local launch scripts (`setup.sh`, `start.sh`, `stop.sh`) | Fast developer onboarding for the interface layer |
+| Command-driven terminal workflow | Makes the platform feel like a real institutional product early |
+| Multi-function panels across equities, macro, FX, crypto, and options | Gives LEVIATHAN a broad market context shell before bespoke feeds are wired in |
+| Transparent rule-based scoring | Preserves explainability and supports governed decision review |
+| OpenBB provider abstraction | Accelerates early data integration without building everything from zero |
+
+### Known Constraints to Respect During Integration
+
+This extension should be adopted with discipline. The imported project is a strong interface and intelligence shell, but it does **not** replace the deeper institutional layers already defined in LEVIATHAN.
+
+| Constraint | Meaning for LEVIATHAN |
+|---|---|
+| **Polling, not true streaming** | It is suitable for early intelligence and supervision, but not sufficient alone for high-frequency or order-book-grade live execution |
+| **Provider limitations** | Some advanced economic, options, and global data features depend on additional provider credentials |
+| **Rule heuristics are not final decision logic** | The existing signals are useful as evidence summaries, but LEVIATHAN’s sovereign decision and risk engines must remain authoritative |
+| **UI is terminal-focused, not full governance software** | It should be treated as an extension shell that later inherits LEVIATHAN’s own permissions, journaling, and execution audit layers |
+
+### Recommended Naming Inside LEVIATHAN
+
+Within this repository, the imported capability should be referred to as the **LEVIATHAN Market Intelligence Terminal**. That naming keeps the feature native to LEVIATHAN while still preserving the reality that the first implementation is derived from the BB-Terminal codebase and function design.
+
+### TLDR: Why This Belongs in LEVIATHAN
+
+This extension gives LEVIATHAN an immediately usable trader-facing product layer. Instead of waiting until every sovereign domain is fully built before the platform becomes visible, LEVIATHAN can expose a working terminal that already supports multi-asset monitoring, interpretable scorecards, options and macro context, and command-driven research workflows. In other words, the BB-Terminal project provides the **operator console**, while LEVIATHAN continues to provide the **governed trading organism** behind it.
+
+References
+
+[1]: https://github.com/vaughanf1/BB-Terminal "vaughanf1/BB-Terminal"
+[2]: https://github.com/OpenBB-finance/OpenBB "OpenBB Platform"

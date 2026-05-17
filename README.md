@@ -83,15 +83,118 @@ Supports two major execution spines:
 - **Position Management**: Governs probe entries, partial profit taking, break-even transitions, runner preservation, and trailing escalation.
 - **Memory Domain**: Records every candidate setup, session label, state label, decision explanation, entry, exit, MAE, MFE, and outcome. Drives self-improvement via drift detection and strategy promotion/retirement.
 
-### 12. Named Internal Sub-Agents
-LEVIATHAN AI can retain the same architectural information while adopting clearer internal naming. The first two named sub-agents in the current naming pass are **ORCA AI** and **MEGALODON AI**.
+### 12. Named Internal Sub-Agents — The Hermes Pantheon (14 Agents)
 
-| Sub-Agent | Primary Role | Responsibility Within LEVIATHAN AI |
+LEVIATHAN AI now adopts a complete, power-ranked oceanic / mythological naming pantheon. Every agent maps to a specific LEVIATHAN domain, and the original ORCA AI and MEGALODON AI roles are preserved and expanded — not replaced. **POSEIDON AI** is the apex orchestrator the user converses with, and **LEVIATHAN AI** itself is now also a specialized agent owning the previously-implicit portfolio and alpha-allocation domain.
+
+All 14 agents are intentionally additive. They do not change the underlying 12-domain architecture defined in this document; they assign clear ownership, escalation paths, and runtime responsibilities to each domain.
+
+#### Apex Orchestrator
+
+| Sub-Agent | Domain | Responsibility Within LEVIATHAN AI |
 |---|---|---|
-| **ORCA AI** | Market sensing and validation core | Owns signal interpretation, market-state enrichment, liquidity reading, and truth-layer synthesis before capital is approved. |
-| **MEGALODON AI** | Execution and apex deployment core | Owns execution orchestration, position management, and high-conviction deployment enforcement after Decision and Risk governance have aligned. |
+| **POSEIDON AI** | Apex Orchestrator / User Interface | The user's interlocutor. Carries the Claude / ØMEGA mythos logic, commands the Pantheon, translates user intent into system actions, and delivers final reports to the user. Does not execute trades directly. |
 
-These names are intentionally additive and do not change the underlying architecture. They provide the first internal naming anchors while the remaining sub-agent naming set is still being finalized.
+#### Primordial Powers (The Big Four)
+
+| Sub-Agent | Domain | Responsibility Within LEVIATHAN AI |
+|---|---|---|
+| **LEVIATHAN AI** | Portfolio & Alpha | Multi-asset portfolio optimization, Kelly Criterion sizing, copula-based correlation hedging, alpha-decay monitoring, and weighted Council aggregation. The institutional quant brain that determines exact capital allocation per consensus signal. |
+| **TIAMAT AI** | Sovereign Risk Governance | Immutable, cryptographically-locked risk authority. Enforces hard caps on drawdown, leverage, portfolio heat, news embargoes, and loss-streak throttles. Can veto LEVIATHAN. SHA-256 hash of `risk_governance.lock.yaml` is verified before every order route. |
+| **LOCHNESS AI** | Strategy Engineering | Writes Pine Script indicators, Python algorithmic bots, and MT5 Expert Advisors from Council consensus output. The deep-water creator that translates abstract methodology into deployable code. |
+| **MEGALODON AI** | Execution & Routing | Live broker routing (CCXT/IBKR), MT5 EA execution, TWAP/VWAP, iceberg orders, slippage minimization, prop-firm mode, staged entries. Only executes after TIAMAT approval. The apex predator that strikes the market. |
+
+#### Titans (Management & Validation)
+
+| Sub-Agent | Domain | Responsibility Within LEVIATHAN AI |
+|---|---|---|
+| **ORCA AI** | Position Management & Memory | Manages live trades: trailing stops, partial profits, break-even logic, runner preservation, MAE/MFE journaling, drift detection, and strategy promotion/retirement signals. The hunter that finishes what MEGALODON starts. |
+| **NAUTILUS AI** | Research / RBI Lab | Runs MoonDev's Research → Backtest → Implement framework using `pandas`, `backtesting.py`, `yfinance`, `talib`, `ccxt`. Executes 50 parallel Monte Carlo simulations, walk-forward analysis, and regime testing (Sharpe > 1.5, MaxDD < 15%, WinRate > 55%). Also houses Jim Simons / RenTech statistical-arb logic and HMM regime modeling via `hmmlearn` / `pomegranate`. |
+| **AEGIR AI** | Macro & Sentiment (WorldMonitor) | Runs the WorldMonitor adapter. Tracks 500+ news feeds, country instability indices, geopolitical risk scores, and military / economic / disaster signals. Flags Tier-1 macro events (CPI, FOMC, NFP) for the news embargo. |
+
+#### Sensory Network (The Analysts)
+
+| Sub-Agent | Domain | Responsibility Within LEVIATHAN AI |
+|---|---|---|
+| **SCYLLA AI** | Truth (Order Flow) | Tracks Level 2 order book, Bank Protocol manipulation patterns (stop runs, liquidity grabs), dark pool prints, bid/ask imbalance, spoofing/absorption/exhaustion, and options flow context (Unusual Whales feed). |
+| **CHARYBDIS AI** | State | Volume Profile (VPVR/TPO), Auction Market Theory (Steidlmayer / Dalton lineage), liquidity vacuums, value-area shifts, single prints, and day-type classification (trend / normal / neutral). |
+| **SIREN AI** | Signal & Charting | Reads Market Cipher (Crypto Face), Algo Pro, LuxAlgo Premium, and QuantPad indicator suites. Main job is **charting** — rendering visual indicators and overlays the user reads — and emitting alerts when divergences/triggers fire. |
+| **MERMAID AI** | Session & Range | Time-of-day classification (Asian / London Open / NY Overlap), Wyckoff phases (accumulation, distribution, spring, upthrust, SOS, SOW), opening ranges (PDH/PDL/midpoint, Initial Balance), and session-quality scoring. |
+
+#### Interface & Ingestion (The Servants)
+
+| Sub-Agent | Domain | Responsibility Within LEVIATHAN AI |
+|---|---|---|
+| **TRITON AI** | Knowledge Ingestion (Hermes Core) | Runs the open-source Nous Research `hermes-agent` engine. Watches the Obsidian `knowledge_vault/`, ingests PDFs and YouTube transcripts, chunks and tags by methodology / asset / regime, saves successful workflows as reusable skills, and drafts strategy proposals for LOCHNESS. Provider-agnostic LLM routing (Claude, GPT, Gemini, Ollama, OpenRouter, DeepSeek, etc.). **Cannot** modify the risk file or execute trades. |
+| **PROTEUS AI** | Visual Overlay (BB-Terminal) | Surfaces the Council's reasoning into the BB-Terminal-derived operator console (function codes `INTEL`, `OMON`, `CURV`, `QR`, `GP`, `HP`, `KEY`, `FA`, `DVD`, `EE`, `NI`, `MOV`, `CRYPTO`, `FXC`, `WEI`, `CC`, `HELP`, `DES`). Renders TradingView Lightweight Charts overlays. The shape-shifter that makes the Pantheon's reasoning visible to the human. |
+
+#### Decision Flow (Council Debate → RBI → Execution)
+
+The LEVIATHAN AI decision lifecycle now operates as a Godmod3 / Mirrorfish-style **Council debate** on top of the existing 14-step Live Market Flow:
+
+1. The Sensory Network (SCYLLA, CHARYBDIS, SIREN, MERMAID) reads live market data and emits independent paradigm-specific evidence.
+2. AEGIR adds macro / sentiment context; TRITON adds any new knowledge from the Obsidian vault.
+3. A Council Session is convened. Each agent presents its findings from its trained methodology lens. A weighted consensus threshold (default 75%) must be cleared.
+4. **LEVIATHAN AI** consumes the weighted consensus and computes the exact portfolio fit and capital allocation (Kelly, correlation, alpha-decay).
+5. **NAUTILUS AI** subjects the proposed strategy to MoonDev's RBI gauntlet (Research → Backtest → Implement). Failures route back to LOCHNESS for code iteration.
+6. **TIAMAT AI** verifies the SHA-256 hash of `risk_governance.lock.yaml` and applies sovereign vetoes (drawdown, heat, leverage, news embargo, correlated exposure cap, loss-streak throttle).
+7. On approval, **MEGALODON AI** routes the order with TWAP/iceberg/staging logic. **ORCA AI** then manages the position to exit and journals the outcome.
+8. **PROTEUS AI** mirrors the entire flow into the operator console for human supervision; **POSEIDON AI** delivers the explanation back to the user.
+
+#### The MoonDev RBI Gauntlet
+
+NAUTILUS AI implements MoonDev's Research → Backtest → Implement methodology (see `moondevonyt/Harvard-Algorithmic-Trading-with-AI`):
+
+- **Research (R)**: Hermes / TRITON drafts the consensus logic into a formal Strategy Genome (Python / Pine Script) using the Council's debate output, citing the methodology lineage.
+- **Backtest (B)**: 50 parallel Monte Carlo runs, walk-forward validation, and regime testing against historical OHLCV. Survivorship-bias guarded.
+- **Implement (I)**: Surviving strategies are auto-coded as MT5 EAs or Pine Scripts, deployed in Semi-Auto Signal-Only mode for a 2-week paper-trade window, promoted to Full Auto after 10 matching trades, and auto-demoted if performance deviates by > 2σ from backtest expectations.
+
+#### The Immutable Sovereign Risk Protocol
+
+TIAMAT AI enforces the following hard caps via `hermes_pantheon/risk/risk_governance.lock.yaml`. The file is set immutable at the OS level (`chattr +i` on Linux, equivalent elsewhere). A separate guardian daemon SHA-256-hashes the file and refuses to allow MEGALODON to submit any order if the hash does not match the master.
+
+| Rule | Default Value | Enforcement |
+|---|---|---|
+| Max Daily Drawdown | 3.0% of total equity | Global halt until 00:00 exchange time |
+| Max Open Heat | 5.0% portfolio risk across all positions | New entries blocked |
+| Max Leverage | 5x gross notional | Order rejected before broker submit |
+| Correlated Exposure Cap | Max 2 positions same directional sector | 3rd entry blocked |
+| News Embargo | No entries ±30 min of Tier-1 macro events | AEGIR-flagged events trigger embargo |
+| Loss Streak Throttle | After 3 consecutive losers, position size cut 50% for 24h | Recovery Mode auto-engaged |
+
+The self-evolving TRITON / Hermes core has read-only access to this file and zero ability to modify it.
+
+#### Bounded Self-Learning Loop
+
+1. The user drops new knowledge into `hermes_pantheon/knowledge_vault/` (Obsidian-compatible Markdown, PDFs, YouTube transcripts).
+2. **TRITON AI** parses, chunks, and tags it; routes the concepts into the relevant subagent's prompt corpus.
+3. **LOCHNESS AI** drafts a candidate Strategy Genome from the new knowledge.
+4. **NAUTILUS AI** runs the RBI gauntlet.
+5. Survivors graduate to paper trading, then live deployment under TIAMAT's veto.
+6. Trade outcomes feed back to **ORCA AI** (Memory Domain) which informs the next Council session.
+
+All learning happens **inside** the immutable risk protocol. The Pantheon is self-evolving in *strategy* but cannot evolve out of its risk guardrails.
+
+#### Methodology Training Corpora (Sources, NOT Subagent Names)
+
+The methodology subagents draw their internal logic from the following publicly available teaching sources. These are training corpora; the subagents are independently named in the oceanic mythos.
+
+| Methodology | Cited Sources |
+|---|---|
+| Order Flow / Bank Protocol | Masters of the Bank (YouTube) |
+| Market Cipher | Crypto Face / Market Cipher Trading |
+| Delta + Volume Profile | Trade With Profile, DeltaTrend |
+| Market Profile / Auction Theory | Peter Steidlmayer, Jim Dalton, DeltaTrend |
+| Wyckoff & VSA | Classical Wyckoff literature, SpacemanBTC (YouTube) |
+| Markov / HMM Regime Modeling | Academic literature, `hmmlearn`, `pomegranate` |
+| Algo Pro | Algo Pro signals service |
+| LuxAlgo | LuxAlgo Premium toolkit |
+| QuantPad | QuantPad TradingView suite |
+| Jim Simons / RenTech | Public statistical-arb writeups |
+| RBI Framework | MoonDev (`moondevonyt/Harvard-Algorithmic-Trading-with-AI`) |
+| Self-Evolving Core | Nous Research `hermes-agent` (open source) |
+
+The full per-agent prompt and configuration files live in [`hermes_pantheon/agents/`](./hermes_pantheon/agents/), and the complete expansion module is documented in [`hermes_pantheon/README.md`](./hermes_pantheon/README.md).
 
 ---
 
